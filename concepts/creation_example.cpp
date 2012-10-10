@@ -14,7 +14,7 @@ struct MyEqualityComparable {
     }
 
 private:
-    T a, b;
+    static T a, b;
     void require_boolean(bool);
 };
 

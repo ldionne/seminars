@@ -14,7 +14,7 @@ struct MyEqualityComparable {
     }
 
 private:
-    T a, b;
+    static T a, b;
     void require_boolean(bool);
 };
 
@@ -29,6 +29,7 @@ class equality_comparable_archetype {
     equality_comparable_archetype();
     equality_comparable_archetype(Self const&);
     Self& operator=(Self const&);
+    ~equality_comparable_archetype();
 };
 bool operator==(equality_comparable_archetype const&,
                 equality_comparable_archetype const&)
