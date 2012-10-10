@@ -24,8 +24,6 @@ BOOST_CONCEPT_REQUIRES(
     ((boost::InputIterator<Iterator>))
     ((boost::EqualityComparable<T>)),
 (Iterator)) my_other_find(Iterator first, Iterator last, T const& value) {
-    BOOST_CONCEPT_ASSERT((boost::InputIterator<Iterator>));
-    BOOST_CONCEPT_ASSERT((boost::EqualityComparable<T>));
     return std::find(first, last, value);
 }
 
