@@ -26,7 +26,7 @@ void operator==(bad_comp const&, bad_comp const&);
 bool operator!=(bad_comp const&, bad_comp const&);
 
 
-int main(int argc, char const* argv[]) {
+int main() {
     // Will work.
     BOOST_CONCEPT_ASSERT((MyEqualityComparable<int>));
     BOOST_CONCEPT_ASSERT((MyEqualityComparable<float>));
@@ -36,6 +36,4 @@ int main(int argc, char const* argv[]) {
 
     // Will fail because bad_comp::operator== does not return a boolean.
     //BOOST_CONCEPT_ASSERT((MyEqualityComparable<bad_comp>));
-
-    return 0;
 }

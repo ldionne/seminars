@@ -40,8 +40,6 @@ bool operator!=(equality_comparable_archetype const&,
 { return true; }
 
 
-int main(int argc, char const* argv[]) {
+int main() {
     BOOST_CONCEPT_ASSERT((MyEqualityComparable<equality_comparable_archetype>));
-
-    return 0;
 }

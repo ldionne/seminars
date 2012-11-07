@@ -35,7 +35,7 @@ struct non_input_iterator : std::ostream_iterator<int> {
 };
 
 
-int main(int argc, char const* argv[]) {
+int main() {
     std::vector<int> int_vec(10);
     std::vector<non_comparable> nocomp_vec(10);
 
@@ -50,6 +50,4 @@ int main(int argc, char const* argv[]) {
     // Will fail because non_input_iterator is not an InputIterator.
     //my_find(non_input_iterator(), non_input_iterator(), 0);
     //my_other_find(non_input_iterator(), non_input_iterator(), 0);
-
-    return 0;
 }
