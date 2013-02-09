@@ -1,0 +1,6 @@
+[submodule "ext/duck"]
+	path = ext/duck
+	url = git://github.com/ldionne/duck.git
+[submodule "ext/mpl11"]
+	path = ext/mpl11
+	url = https://github.com/ldionne/mpl11.git
