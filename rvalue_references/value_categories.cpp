@@ -16,7 +16,7 @@ int main() {
     //&lvalue();  // works: lvalue() yields an lvalue.
     //&xvalue();  // fails: xvalue() does not yield an lvalue.
 
-    Type&& named_xvalue_is_actually_an_lvalue = xvalue();
+    //Type&& named_xvalue_is_actually_an_lvalue = xvalue();
     // works: a named xvalue is actually an lvalue
     //&named_xvalue_is_actually_an_lvalue;
 }

@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 2.8)
 
 project(concepts)
 
+add_definitions(-Wall -Wextra -pedantic)
 
 add_executable(usage_example usage_example.cpp)
 add_executable(creation_example creation_example.cpp)
