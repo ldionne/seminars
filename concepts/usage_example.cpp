@@ -2,6 +2,7 @@
 // Example of using concept checks to catch errors early on.
 //
 
+#include <algorithm>
 #include <boost/concept/assert.hpp>
 #include <boost/concept/requires.hpp>
 #include <boost/concept_check.hpp>
