@@ -7,6 +7,10 @@ find_package(Boost 1.51.0 REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
+if(${CMAKE_COMPILER_IS_GNUCXX})
+    add_definitions(-Wno-unused-local-typedefs)
+endif()
+
 # duck and mpl11
 include_directories(ext/duck/include)
 include_directories(ext/mpl11/include)
