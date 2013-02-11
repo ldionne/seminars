@@ -7,3 +7,4 @@ if (${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
 endif()
 
 add_executable(find_disjoint use_cases/find_disjoint.cpp)
+add_executable(distance use_cases/distance.cpp)
