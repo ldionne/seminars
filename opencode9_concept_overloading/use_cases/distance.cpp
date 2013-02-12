@@ -22,11 +22,9 @@ my_distance(Iterator first, Iterator last) {
 }
 
 template <typename Iterator>
-typename boost::enable_if<
-    duck::is_forward_iterator<Iterator>,
 typename boost::disable_if<
-    duck::is_random_access_iterator<Iterator>,
-typename std::iterator_traits<Iterator>::difference_type>::type>::type
+    duck::models<duck::RandomAccessIterator, Iterator>,
+typename std::iterator_traits<Iterator>::difference_type>::type
 my_distance(Iterator first, Iterator last) {
     typedef typename std::iterator_traits<Iterator>::difference_type Diff;
     Diff len = 0;
