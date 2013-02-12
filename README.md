@@ -6,10 +6,12 @@ different occasions.
 
 ## Concepts
 A workshop about programming with concepts in C++.
+
 Associated slides [here](http://goo.gl/LTL6z).
 
 ## Rvalue references
 A workshop about rvalue references in C++11.
+
 Associated slides [here](http://goo.gl/SMOLu).
 
 ## Concept-based overloading (Opencode #9)
@@ -20,4 +22,5 @@ given concept.
 
 The presentation assumes no previous exposure to the C++ language, although
 it is strongly suggested.
+
 Associated slides [here](http://goo.gl/JDU6W).
