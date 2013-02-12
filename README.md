@@ -13,9 +13,9 @@ A workshop about rvalue references in C++11.
 
 Associated slides [here](http://goo.gl/SMOLu).
 
-## Concept-based overloading (Opencode #9)
+## Concept-based overloading (OpenCode #9)
 A presentation prepared for the 9th edition of the
-[Opencode](http://opencode.ca) in Québec. The presentation is about using
+[OpenCode](http://opencode.ca) in Québec. The presentation is about using
 metafunctions to control overload resolution in C++. The term _concept-based_
 overloading is used because the metafunctions considered in the presentation
 determine whether a type is a model of a given concept.
